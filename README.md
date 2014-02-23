@@ -7,7 +7,7 @@ convert tsv to json format.
 ## Install
 
 ```
-  npm install tsv-to-json
+  npm install node-tsv-json
 ```
 
 ## Usage
