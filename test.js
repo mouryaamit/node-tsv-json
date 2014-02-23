@@ -26,20 +26,22 @@ describe('tsv to json', function() {
 		})
 	})
 
-	it('should convert tsv to json file', function() {
+	it('should convert tsv to json file', function(cb) {
 		tsv2json({
 			input: './sample/sample.tsv',
 			output: './sample/test.json'
 		}, function(err, result) {
 			should.not.exist(err)
 			result.should.be.an.instanceOf(Object)
+			cb();
 		})
 
 	})
 
-	it('should read file in test.json', function() {
+	it('should read file in test.json', function(cb) {
 		var exist = fs.existsSync('./sample/test.json')
 		exist.should.be.true;
+		cb();
 	})
 
 })
