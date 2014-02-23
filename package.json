@@ -1,5 +1,5 @@
 {
-  "name": "node-tsv-json",
+  "name": "tsv-to-json",
   "version": "0.1.0",
   "description": "convert tsv to json",
   "main": "index.js",
