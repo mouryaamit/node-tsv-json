@@ -1,5 +1,7 @@
 # node-tsv-json
 
+[![Build Status](https://travis-ci.org/DataGarage/node-tsv-json.png?branch=master)](https://travis-ci.org/DataGarage/node-tsv-json)
+
 convert tsv to json format.
 
 ## Install
