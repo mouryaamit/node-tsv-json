@@ -13,7 +13,7 @@ convert tsv to json format.
 ## Usage
 
 ```javascript
-  tsv = require("tsv-to-json");
+  tsv = require("node-tsv-json");
   tsv({
     input: "sample.tsv", 
     output: "output.json"
