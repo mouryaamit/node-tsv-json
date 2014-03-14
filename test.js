@@ -44,4 +44,17 @@ describe('tsv to json', function() {
 		cb();
 	})
 
+	it('should convert space tsv', function(cb) {
+		tsv2json({
+			input: './sample/users.tsv',
+			output: null
+		}, function(err, result) {
+			should.not.exist(err)
+			result.should.be.an.instanceOf(Object)
+			var re= /\s/
+			re.test(result[0].name).should.be.false;
+			cb();
+		})
+
+	})
 })
