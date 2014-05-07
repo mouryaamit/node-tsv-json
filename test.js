@@ -26,6 +26,17 @@ describe('tsv to json', function() {
 		})
 	})
 
+	it('should parse tsv to json array and in rows', function(cb) {
+		tsv2json({
+			input: './sample/sample.tsv',
+			parseRows: true
+		}, function(err, result) {
+			should.not.exist(err);
+			result.should.be.an.instanceOf(Array);
+			cb()
+		})
+	})
+
 	it('should convert tsv to json file', function(cb) {
 		tsv2json({
 			input: './sample/sample.tsv',
@@ -58,3 +69,4 @@ describe('tsv to json', function() {
 
 	})
 })
+

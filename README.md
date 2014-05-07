@@ -18,7 +18,7 @@ convert tsv to json format.
     input: "sample.tsv", 
     output: "output.json"
     //array of arrays, 1st array is column names
-    //,compress: 1
+    ,parseRows: true
   }, function(err, result) {
     if(err) {
       console.error(err);
@@ -30,7 +30,7 @@ convert tsv to json format.
 
 In config object, you have to enter an input path. But If you don't want to output any file you can set to `null`.
 
-Add `compress: 1` to the config object to output an array of arrays where the first element is an array of column names followed by arrays of values.
+Add `parseRows: true` to the config object to output an array of arrays where the first element is an array of column names followed by arrays of values.
 
 ## License 
 
