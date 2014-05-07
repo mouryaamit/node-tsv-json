@@ -26,6 +26,7 @@ convert tsv to json format.
       console.log(result);
 
       //    [
+      //      { 'date, 'close'},
       //      { '31-Jul-07', '131.76' },
       //      { '30-Jul-07', '141.43' },
       //      { '27-Jul-07', '143.85' },
@@ -45,6 +46,7 @@ Add `parseRows: true (optional)` to the config object to output an array of arra
 
 ```
 [
+    [ 'date', 'close'],
     [ '31-Jul-07', '131.76' ],
     [ '30-Jul-07', '141.43' ],
     [ '27-Jul-07', '143.85' ],
