@@ -2,7 +2,7 @@ var csv = require('csv-streamify'),
     fs = require('fs')
 
 var fstream = fs.createReadStream('../tsv/100000.tsv'),
-    parser = csv(callback /* optional */)
+    parser = csv({delimiter: '	'}, callback /* optional */)
 
 // emits each line as a buffer or as a string representing an array of fields
 parser.on('readable', function () {
